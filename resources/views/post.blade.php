@@ -24,5 +24,5 @@
 @endsection
 
 @section('sidebar')
-<a class="btn" style="width: 100%" href="..">ดูคำอวยพร</a>
+<a class="btn btn-light" style="width: 100%" href="..">ดูคำอวยพร</a>
 @endsection
