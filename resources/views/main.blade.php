@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}"></link>
 </head>
 <body>
+    <div class="tinter"></div>
     <div class="container">
         <div class="row">
             <div class="col col-lg-3 sidebar">
