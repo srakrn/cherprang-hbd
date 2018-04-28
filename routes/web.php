@@ -14,3 +14,5 @@
 Route::get('/', 'MainController@index');
 Route::get('/new', 'MainController@newPostPage');
 Route::post('/new', 'MainController@savePost');
+Route::get('/manage', 'MainController@managePage');
+Route::post('/manage', 'MainController@updatePost');
