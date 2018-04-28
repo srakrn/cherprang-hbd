@@ -13,8 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('wishes', 'ApiController@wishes');
-Route::get('new', 'ApiController@save');
+Route::get('wishes', 'ApiController@list');
+Route::post('new', 'ApiController@save');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
