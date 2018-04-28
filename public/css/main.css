@@ -1,10 +1,10 @@
-html{
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald|Pridi');
+
 body {
     background: url('/img/cherprang-river-jhk.jpeg') no-repeat center center fixed;
     background-size: cover;
     padding-top: 100px;
-    font-family: 'Boon';
+    font-family: 'Pridi';
     font-size: 18px;
     color: #fff;
 }
