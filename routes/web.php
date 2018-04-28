@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'MainController@index');
-Route::get('/new', 'MainController@postForm');
+Route::get('/new', 'MainController@newPostPage');
+Route::post('/new', 'MainController@savePost');

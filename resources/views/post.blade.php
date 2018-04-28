@@ -5,8 +5,9 @@
         <h5 class="card-header">ร่วมอวยพรวันเกิดเฌอปราง</h5>
     <div class="card-body">
         <p>สามารถกรอกข้อความอวยพรวันเกิดได้บริเวณด้านล่าง</p>
-        <form>
-            <div class="form-group" method="post">
+        <form method="post">
+            @csrf
+            <div class="form-group">
                 <label for="name">ชื่อที่จะปรากฏ</label>
                 <input type="text" class="form-control" id="name" name="name" maxlength="50">
                 <small>จำกัด 50 ตัวอักษร</small>
