@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ApiController extends Controller
 {
     public function wishes(){
-        return \App\Wish::all();
+        return \App\Wish::where('hidden', 0)->get();
     }
 }

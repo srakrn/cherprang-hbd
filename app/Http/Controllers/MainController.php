@@ -8,6 +8,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $wishes = \App\Wish::where('hidden', 0)->get();
+        return view('index', ['wishes' => $wishes]);
     }
 }
