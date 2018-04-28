@@ -12,7 +12,7 @@
     <div class="tinter"></div>
     <div class="container">
         <div class="row">
-            <div class="col col-lg-3 sidebar">
+            <div class="col col-lg-3 sidebar text-white">
                 <h1>HAPPY BIRTHDAY CHERPRANG</h1>
                 <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้</p>
                 @yield('sidebar')

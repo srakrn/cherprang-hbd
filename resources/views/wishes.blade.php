@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach ($wishes as $wish)
-    <div class="card">
+    <div class="card text-white bg-dark bg-dark-translucent">
         <div class="card-body">
             <blockquote class="blockquote mb-0">
                 <p>{{ $wish->wish }}</p>

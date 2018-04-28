@@ -11,4 +11,9 @@ class MainController extends Controller
         $wishes = \App\Wish::where('hidden', 0)->orderBy('created_at', 'desc')->get();
         return view('wishes', ['wishes' => $wishes]);
     }
+
+    public function postForm()
+    {
+        return view('post');
+    }
 }
