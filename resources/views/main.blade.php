@@ -14,18 +14,10 @@
             <div class="col col-lg-3 sidebar">
                 <h1>HAPPY BIRTHDAY CHERPRANG</h1>
                 <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้</p>
+                @yield('sidebar')
             </div>
             <div class="col col-lg-9">
-                @foreach ($wishes as $wish)
-                <div class="card">
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>{{ $wish->wish }}</p>
-                            <footer class="blockquote-footer"><cite title="Source Title">{{ $wish->name }}</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                @endforeach
+                @yield('content')
             </div>
         </div>
     </div>
