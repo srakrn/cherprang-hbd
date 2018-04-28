@@ -15,8 +15,8 @@
                 <h1>HAPPY BIRTHDAY CHERPRANG</h1>
                 <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้</p>
             </div>
-            @foreach ($wishes as $wish)
             <div class="col col-lg-9">
+                @foreach ($wishes as $wish)
                 <div class="card">
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
@@ -25,8 +25,8 @@
                         </blockquote>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </div>
 </body>
