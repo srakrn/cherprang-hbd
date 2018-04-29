@@ -31,7 +31,7 @@
                 <label for="password">Administrator password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary">อวยพรวันเกิด!</button>
+            <button type="submit" class="btn btn-primary">แก้ไข</button>
         </form>
     </div>
     </div>
