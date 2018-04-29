@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ร่วมเขียนข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้" />
     <meta property="og:image" content="{{ asset('img/happycherday-thumbnail.jpg') }}" />
+    <meta property="og:image:wigth" content="1200" />
+    <meta property="og:image:height" content="627" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="ร่วมเขียนข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}"></link>
