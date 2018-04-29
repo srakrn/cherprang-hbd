@@ -15,14 +15,12 @@
     <div class="container">
         <div class="row">
             <div class="col col-lg-3 sidebar text-white">
-                <h1>#HBD<br/><b>CHERPRANG</b><br/>BNK48 🎂</h1>
-                <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้ หรือร่วมทวิตติดแท็ก #HBDCherprangBNK48</p>
-                @yield('sidebar')
-                <hr/>
+                <h1>#HAPPY<br/><b>CHER</b><br/>DAY 🎂</h1>
+                <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้ หรือร่วมทวิตติดแท็ก #happyCHERday #HBDCherprangBNK48</p>
                 <small>
-                    <p>รูปภาพพื้นหลังจาก<a href="https://www.facebook.com/jorhorkor48/">จฮก</a></p>
-                    <p>Made with love by <a href="https://srakrn.me/">@srakrn</a></p>
+                    <p>รูปภาพพื้นหลังจาก<a href="https://www.facebook.com/jorhorkor48/">จฮก.</a>, Made with love by <a href="https://srakrn.me/">@srakrn</a></p>
                 </small>
+                @yield('sidebar')
             </div>
             <div class="col col-lg-9">
                 @yield('content')
