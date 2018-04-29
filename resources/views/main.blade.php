@@ -14,7 +14,7 @@
     <div class="tinter"></div>
     <div class="container">
         <div class="row">
-            <div class="col col-lg-3 sidebar text-white">
+            <div class="col-sm-12 col-md-3 sidebar text-white">
                 <h1>#HAPPY<br/><b>CHER</b><br/>DAY 🎂</h1>
                 <p>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้ หรือร่วมทวิตติดแท็ก #happyCHERday #HBDCherprangBNK48</p>
                 <small>
@@ -22,7 +22,7 @@
                 </small>
                 @yield('sidebar')
             </div>
-            <div class="col col-lg-9">
+            <div class="col-sm-12 col-md-9">
                 @yield('content')
             </div>
         </div>

@@ -21,6 +21,9 @@ small p{
     margin-bottom: 5px;
 }
 
+.sidebar{
+    margin-bottom: 50px;
+}
 .sidebar h1{
     font-family: 'Oswald', sans-serif;
 }
