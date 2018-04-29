@@ -44,7 +44,8 @@ $('#wish').keyup(function () {
   var len = $(this).val().length;
   if (len > max) {
     $('#wish-count').text('เกินความยาวแล้วจ้า~ จะกดส่งไม่ไปนะ');
-  } else {
+  }
+  else {
     var char = max - len;
     $('#wish-count').text('เหลือ ' + char + ' ตัวอักษร');
   }
