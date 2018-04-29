@@ -4,6 +4,16 @@
     <div class="card">
         <h5 class="card-header">ร่วมอวยพรวันเกิดเฌอปราง</h5>
     <div class="card-body">
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <h5>พบข้อผิดพลาด</h5>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
         <p>สามารถกรอกข้อความอวยพรวันเกิดได้บริเวณด้านล่าง</p>
         <form method="post">
             @csrf

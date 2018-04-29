@@ -17,12 +17,11 @@ body {
     z-index: -1;
 }
 
-.sidebar{
-    text-shadow: 0px 0px 5px #000;
-}
-
 .sidebar h1{
     font-family: 'Oswald', sans-serif;
+}
+.sidebar h1, .sidebar p{
+    text-shadow: 0px 0px 5px #000;
 }
 
 .card {

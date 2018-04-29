@@ -18,8 +18,16 @@ class MainController extends Controller
     }
     
     public function savePost(Request $request){
+        $this->validate($request, [
+            'name' => 'required|max:50',
+            'wish' => 'required|max:280'
+        ], [
+            'name.required' => 'ยังไม่ได้กรอกชื่อ',
+            'wish.required' => 'ยังไม่ได้กรอกข้อความอวยพร',
+            'name.max' => 'ชื่อยาวเกิน 50 ตัวอักษร',
+            'wish.max' => 'คำอวยพรยาวเกิน 280 ตัวอักษร'
+        ]);
         $wish = \App\Wish::create($request->all());
-        $wishes = \App\Wish::where('hidden', 0)->orderBy('created_at', 'desc')->get();
         return redirect('/');
     }
 
@@ -29,19 +37,18 @@ class MainController extends Controller
     }
 
     public function updatePost(Request $request){
-        try{
-            if(\Hash::check($request->username.":".$request->password, "\$2y\$10\$MjlSvxHIyyzHq18Vd7B/Eex6wpErTgVElNY3zM7//wqOrgi.XD3AC")){
+        if(\Hash::check($request->username.":".$request->password, "\$2y\$10\$MjlSvxHIyyzHq18Vd7B/Eex6wpErTgVElNY3zM7//wqOrgi.XD3AC")){
+            try{
                 $wish = \App\Wish::FindOrFail($request->id);
                 $wish->hidden = $request->hidden;
                 $wish->save();
                 return $wish;
             }
-            else{
+            catch(ModelNotFoundException $e){
                 return "Update failed";
             }
         }
-        catch(ModelNotFoundException $e)
-        {
+        else{
             return "Update failed";
         }
     }
