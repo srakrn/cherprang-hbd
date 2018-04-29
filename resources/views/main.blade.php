@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-3 sidebar text-white">
-                <h1>#HAPPY<br/><b>CHER</b><br/>DAY 🎂</h1>
+                <h1><a href="/">#HAPPY<br/><b>CHER</b><br/>DAY 🎂</a></h1>
                 <p><br/>ร่วมส่งข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้ หรือร่วมทวิตติดแท็ก #happyCHERday #HBDCherprangBNK48</p>
                 <small>
                     <p>รูปภาพพื้นหลังจาก<a href="https://www.facebook.com/jorhorkor48/">จฮก.</a>, Made with love by <a href="https://srakrn.me/">@srakrn</a></p>
