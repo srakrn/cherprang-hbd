@@ -4,6 +4,11 @@
     <div class="card">
         <h5 class="card-header">แก้ไขคำอวยพร (สิทธิ์เฉพาะผู้ดูแลระบบ)</h5>
     <div class="card-body">
+        @if (session('status'))
+        <div class="alert alert-info">
+            {{ session('status') }}
+        </div>
+        @endif
         <form method="post">
             @csrf
             <div class="form-group">

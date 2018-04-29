@@ -16,7 +16,7 @@ class MainController extends Controller
     {
         return view('post');
     }
-    
+
     public function savePost(Request $request){
         $this->validate($request, [
             'name' => 'required|max:50',
@@ -28,7 +28,11 @@ class MainController extends Controller
             'wish.max' => 'คำอวยพรยาวเกิน 280 ตัวอักษร'
         ]);
         $wish = \App\Wish::create($request->all());
-        return redirect('/');
+        return redirect('success')->with('wish', $wish);
+    }
+    
+    public function successPost(\App\Wish $wish){
+        return view('success')->with('wish', $wish);
     }
 
     public function managePage()
@@ -42,14 +46,14 @@ class MainController extends Controller
                 $wish = \App\Wish::FindOrFail($request->id);
                 $wish->hidden = $request->hidden;
                 $wish->save();
-                return $wish;
+                return redirect('manage')->with('status', "Managed post.");
             }
             catch(ModelNotFoundException $e){
-                return "Update failed";
+                return redirect('manage')->with('status', "Indicated post not found.");
             }
         }
         else{
-            return "Update failed";
+            return redirect('manage')->with('status', "Authentication failed.");
         }
     }
 }
