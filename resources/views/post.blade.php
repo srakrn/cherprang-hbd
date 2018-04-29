@@ -27,6 +27,7 @@
                 <textarea class="form-control" id="wish" name="wish" rows="3" maxlength="280" required></textarea>
                 <small id="wish-count">เหลือ 280 ตัวอักษร</small>
             </div>
+            <div class="alert alert-warning" id="typo-alert" style="display: none"></div>
             <button type="submit" class="btn btn-primary">อวยพรวันเกิด!</button>
         </form>
     </div>
@@ -36,7 +37,6 @@
 @section('sidebar')
 <a class="btn btn-light" style="width: 100%" href="..">ดูคำอวยพร</a>
 @endsection
-
 @section('footer')
 <script>
 $('#wish').keyup(function () {
@@ -47,6 +47,13 @@ $('#wish').keyup(function () {
   } else {
     var char = max - len;
     $('#wish-count').text('เหลือ ' + char + ' ตัวอักษร');
+  }
+  if ($(this).val().search('เณอ') != -1 || $(this).val().search('เญอ') != -1 || $(this).val().search('ปรางค์') != -1){
+    $('#typo-alert').html("<b>ระวัง:</b> ชื่อเฌอปราง สะกดด้วยฌ.เฌอ (Shift+สระเอ) และไม่มีค.ควายการันต์นะ~");
+    $('#typo-alert').show();
+  }
+  else{
+    $('#typo-alert').hide();
   }
 });
 $('#name').keyup(function () {
