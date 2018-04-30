@@ -5,9 +5,8 @@
     <div class="card text-white bg-dark bg-dark-translucent">
         <div class="card-body">
             <blockquote class="blockquote mb-0">
-                <!-- {{ $wish->id }} -->
                 <p>{{ $wish->wish }}</p>
-                <footer class="blockquote-footer"><cite title="Source Title">{{ $wish->name }}</cite></footer>
+                <footer class="blockquote-footer" title="Message ID: {{ $wish->id }}"><cite>{{ $wish->name }}</cite></footer>
             </blockquote>
         </div>
     </div>
