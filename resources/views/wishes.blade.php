@@ -6,7 +6,7 @@
         <div class="card-body">
             <blockquote class="blockquote mb-0">
                 <p>{{ $wish->wish }}</p>
-                <footer class="blockquote-footer" title="Message ID: {{ $wish->id }}"><cite>{{ $wish->name }}</cite></footer>
+                <footer class="blockquote-footer"><cite title="Message ID: {{ $wish->id }}">{{ $wish->name }}</cite></footer>
             </blockquote>
         </div>
     </div>
