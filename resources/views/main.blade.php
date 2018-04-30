@@ -13,6 +13,9 @@
     <meta property="og:image:height" content="627" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="ร่วมเขียนข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้" />
+    <link rel="apple-touch-icon" href="{{ asset('img/touch-icon.png') }}">
+    <link rel="icon" sizes="192x192" href="{{ asset('img/touch-icon-192.png') }}">
+    <meta name="theme-color" content="#F48FB1">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}"></link>
 </head>
 <body>
