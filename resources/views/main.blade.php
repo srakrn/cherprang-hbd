@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="#happyCHERday 🎂" />
     <meta name="twitter:description" content="ร่วมเขียนข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้" />
-    <meta name="twitter:image" content="{{ asset('css/main.css') }}" />
+    <meta name="twitter:image" content="{{ asset('img/happycherday-thumbnail.jpg') }}" />
     <link rel="apple-touch-icon" href="{{ asset('img/touch-icon.png') }}">
     <link rel="icon" sizes="192x192" href="{{ asset('img/touch-icon-192.png') }}">
     <meta name="theme-color" content="#F48FB1">
