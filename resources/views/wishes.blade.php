@@ -1,5 +1,9 @@
 @extends('main')
 
+@php
+    $n = count($wishes);
+@endphp
+
 @section('content')
     @foreach ($wishes as $wish)
     <div class="card text-white bg-dark bg-dark-translucent">
@@ -9,7 +13,11 @@
                 <footer class="blockquote-footer"><cite title="Message ID: {{ $wish->id }}">{{ $wish->name }}</cite></footer>
             </blockquote>
         </div>
+        <div class="message-count">{{ $n }}</div>
     </div>
+    @php
+        $n--;
+    @endphp
     @endforeach
 @endsection
 
