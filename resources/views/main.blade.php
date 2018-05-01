@@ -8,6 +8,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ร่วมเขียนข้อความอวยพรวันเกิดให้กับเฌอปราง BNK48 ได้ที่เว็บไซต์นี้" />
+    <link rel="icon" href="favicon.ico">
     <meta property="og:image" content="{{ asset('img/happycherday-thumbnail.jpg') }}" />
     <meta property="og:image:wigth" content="1200" />
     <meta property="og:image:height" content="627" />
