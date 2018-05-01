@@ -28,7 +28,7 @@
                 <small id="wish-count">เหลือ 280 ตัวอักษร</small>
             </div>
             <div class="alert alert-warning" id="typo-alert" style="display: none"></div>
-            <button type="submit" class="btn btn-primary">อวยพรวันเกิด!</button>
+            <button type="submit" class="btn btn-primary">อวยพรวันเกิด!</button> <span>(กดเบาๆ ทีเดียวพอนะ~)</span>
         </form>
     </div>
     </div>
