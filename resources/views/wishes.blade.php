@@ -22,6 +22,6 @@
 @endsection
 
 @section('sidebar')
-<a class="btn btn-lg btn-primary btn-block" href="new">เขียนอวยพรวันเกิด~</a>
+<a class="btn btn-lg btn-danger btn-block" href="new">เขียนอวยพรวันเกิด~</a>
 <p style="text-align:center"><small>ร่วมอวยพรเฌอปรางแล้ว {{ count($wishes) }} คน</small></p>
 @endsection
